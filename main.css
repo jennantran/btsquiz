@@ -1,0 +1,200 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,footer{
+    background-color: black;
+}
+
+body{
+    margin: 0;
+    font-family: 'Caladea';
+}
+
+
+/******** header styling *********/
+
+header{
+    margin-top: 0.5 rem;
+}
+
+.bts-logo{
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 20px; 
+}
+
+
+h1{
+    color: grey;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px; 
+}
+ul{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    color: grey;
+
+}
+li{
+    display: inline-block;
+    padding-right: 10%;
+    margin-bottom: 30px; 
+  
+}
+
+li .score{
+    padding-right: 30px;
+}
+
+
+.question-score{
+    display:none;
+}
+
+
+/********** form styling *************/
+label{
+    color: white;
+    margin-left: 5px;
+}
+
+fieldset{
+    border: 0;
+    display: flex;
+}
+
+form{
+    width: 75%;
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+    display: flex; 
+    flex-direction:column;
+}
+
+form p{
+    text-align: center;
+}
+
+   
+p{
+    margin-top: 10px;
+    margin-bottom: 20px; 
+    color: white;
+    font-size: 20px; 
+}
+
+footer{
+    width: 100%;
+    height: 300px; 
+    background-image: url(wings-small.jpg);
+    background-color: white;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+
+/********* button styling **********/
+
+button{
+    height: 4rem;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background: #B4B3FF;
+    color: white;
+    border-radius: 3px;
+    width: 10rem;
+    align-self: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+button:hover,
+button:active {
+  background-color: #4d0026;
+  color: #B4B3FF;
+  border: 1px #4d0026 solid;
+}
+
+h2{
+    color: white;
+    text-align:center;
+}
+
+.next{
+    align-self: center;
+
+}
+
+/******** last page styling *********/
+.final{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+
+
+.selections{
+    width: 185px;
+    height: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: auto;
+
+    
+}
+
+.done{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}
+.thumbs-up{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.audio{
+    position: relative;
+}
+
+/******** media queries **********/
+
+@media only screen and (min-width: 320px ){
+   footer{
+    height: 300px; 
+   
+   }
+   label{
+       font-size: 15px;
+   }
+   p{
+       font-size: 15px;;
+   }
+}
+
+
+
+@media only screen and (min-width: 680px){
+    footer{
+        height: 300px; 
+        background-image: url(wings-strip.png);
+    }
+
+    p{
+        font-size: 20px;
+    }
+    label{
+        font-size: 20px;
+    }
+    
+} 
